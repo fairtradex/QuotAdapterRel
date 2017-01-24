@@ -13,8 +13,8 @@ ADD . /src
 COPY . /src
 
 # Install app and dependencies into /src
-RUN cd /src &&  npm install
-
+RUN cd /src 
+RUN npm install
 EXPOSE 3001
 WORKDIR /src
 CMD ["npm", "start"]
