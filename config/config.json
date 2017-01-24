@@ -1,0 +1,33 @@
+{
+  "port": 3002,
+  "favicon": "favicon.ico",
+  "secret": "my super secret!!!",
+  "development": {
+
+    "mongoose": {
+      "uri" : "mongodb://localhost/test",
+      "options": {
+        "server": {
+          "socketOptions": {
+            "keepAlive": 1
+          }
+        }
+      }
+    },
+
+    "legacy": {
+      "authentication": {
+        "uri": "https://devwebservice.fairtrade.co.il/AuthService.asmx"
+      }
+    },
+
+    "redis": {
+      "host": "stgftdx.redis.cache.windows.net",
+      "port": 6380,
+      "password": "IiVeG+t4B+wvdQyiWzF1TW1YZRMCPaTH2V49KMmx4gY=",
+      "ssl": true,
+      "abortConnect": false,
+      "detect_buffers": true
+    }
+  }
+}
